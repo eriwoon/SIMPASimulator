@@ -2,7 +2,9 @@
 #define DIALOG_H
 
 #include <QDialog>
-
+#include <QTextEdit>
+#include <QLabel>
+#include <QPushButton>
 namespace Ui {
 class Dialog;
 }
@@ -17,6 +19,17 @@ public:
 
 private:
     Ui::Dialog *ui;
+    void setDialogLayout();
+
+//Widgets
+private:
+    QTextEdit   *qTextURL, *qTextBody;
+    QLabel      *qLabelDesc;
+    QPushButton *qButtonSend;
+
+//消息响应处理函数
+private slots:
+    void onClickSend();
 };
 
 #endif // DIALOG_H
