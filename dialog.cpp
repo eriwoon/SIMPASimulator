@@ -13,7 +13,7 @@ Dialog::Dialog(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    this->setWindowTitle("SIMPA Simulator");
+    this->setWindowTitle("SIMPA Simulator GUI Branch");
     this->setWindowFlags(Qt::Dialog
                          | Qt::WindowMaximizeButtonHint
                          | Qt::WindowMinimizeButtonHint
